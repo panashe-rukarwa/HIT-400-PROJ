@@ -7,13 +7,16 @@ from threading import Thread
 import numpy as np
 import playsound
 
+
+
+
 #from pygame import mixer
 
 #mixer.init()
 #soundfile = mixer.Sound('alarm.wav')
 
-MIN_EAR = 0.3
-EYE_AR_CONSEC_FRAMES = 48
+MIN_EAR = 0.30
+EYE_AR_CONSEC_FRAMES = 30
 
 COUNTER = 0
 ALARM_ON = False
@@ -136,6 +139,9 @@ def main():
     cap.release()
     cv2.destroyAllWindows()
     
+
+    
 if __name__=='__main__':
     main()
+          
 
