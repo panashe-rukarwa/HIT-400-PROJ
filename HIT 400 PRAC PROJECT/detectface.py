@@ -133,8 +133,8 @@ def main():
         cv2.imshow("DROWSINESS DETECTION!", frame)
 
         key = cv2.waitKey(1) & 0xFF
-        #if the key 'e for engine keypress' is pressed, break from loop
-        if key == ord("e"):
+        #if the key 'q' for engine keypress' is pressed, break from loop
+        if key == ord("q"):
             break
     cap.release()
     cv2.destroyAllWindows()
